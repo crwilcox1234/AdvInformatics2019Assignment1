@@ -2,6 +2,7 @@
 
 ## HPC good citizenship
 
+TESTING...TESTING
 1. On the UCI cluster, the resource request "-pe openmp 64" refers to the number of processors requested.  Does that
    request mean that your commands will use multiple processors?
 2. In general, how do you know how many processors, how much RAM, how many files would be required/needed/written by the
