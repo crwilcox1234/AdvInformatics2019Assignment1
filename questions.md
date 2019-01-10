@@ -65,9 +65,9 @@ answer: no, /usr/bin/time is linux specific. There is another program called tim
 #$ -N log
 #$ -q bio
 #$ -l node=name_of_node
-#$ -l h_vmem=24GB
+#$ -l h_rss=24GB
 
 echo "Write your commands here"
 ```
 
-after submitting this script you can submit another shell script using #$ -l node=name_of_node by specifying the same node using #$ -l h_vmem=RAM# as long as the h_vmem does not add up to over the amount of RAM the node has.
+after submitting this script you can submit another shell script using #$ -l node=name_of_node by specifying the same node using #$ -l h_rss=RAM# as long as the total h_rss specified for a node does not add up to over the amount of RAM the node has.
